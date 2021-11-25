@@ -21,6 +21,10 @@ const {
     deletarItem
 } = require('./controladores/itens');
 
+app.get('/', (req, res) => {
+    res.send('API Lista de compras');
+});
+
 // Mostra toda a lista ou items pesquisados por nome
 app.get('/api', pegarTodosItens);
 
